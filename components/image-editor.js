@@ -83,7 +83,7 @@ const CustomImageEditor = () => {
     <ImageEditor
       includeUI={{
         loadImage: {
-          path: "img/blank400x600.jpg",
+          path: "img/blank400x600.png",
           name: "Blank Image",
         },
         theme,
@@ -93,7 +93,7 @@ const CustomImageEditor = () => {
           width: "1000px",
           height: "700px",
         },
-        menuBarPosition: "bottom",
+        menuBarPosition: "left",
       }}
       cssMaxHeight={500}
       cssMaxWidth={700}
