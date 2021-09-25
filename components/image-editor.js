@@ -83,8 +83,8 @@ const CustomImageEditor = () => {
     <ImageEditor
       includeUI={{
         loadImage: {
-          path: "img/sampleImage.jpg",
-          name: "SampleImage",
+          path: "img/blank400x600.jpg",
+          name: "Blank Image",
         },
         theme,
         menu: ["shape", "filter", "text", 'mask', 'icon', 'draw', 'crop', 'flip', 'rotate'],
