@@ -12,7 +12,6 @@
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^4.3.2",
-    "@toast-ui/react-image-editor": "^3.15.0",
     "axios": "^0.21.4",
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
@@ -21,7 +20,9 @@
     "ipfs-http-client": "^52.0.5",
     "next": "11.1.2",
     "react": "17.0.2",
+    "react-cropper": "^2.1.8",
     "react-dom": "17.0.2",
+    "react-modal": "^3.14.3",
     "web3modal": "^1.9.4"
   },
   "devDependencies": {
