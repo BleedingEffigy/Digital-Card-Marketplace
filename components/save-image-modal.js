@@ -27,7 +27,7 @@ const SaveImageModalButton = ({ getCropData, cropData}) => {
                 onRequestClose = {() => setModalShowing(!modalIsShowing)}
                 shouldCloseOnOverlayClick = {true}
             >
-                <div className="my-0 max-h-screen">
+                <div className="my-0 max-h-80">
                     <img 
                         src={cropData} 
                         alt="cropped" 

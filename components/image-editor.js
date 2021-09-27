@@ -3,7 +3,7 @@ import SaveImageModalButton from "./save-image-modal";
 import "cropperjs/dist/cropper.css"
 import { useState } from "react";
 
-const defaultSrc = "https://raw.githubusercontent.com/roadmanfong/react-cropper/master/example/img/child.jpg";  
+const defaultSrc = "img/child.jpg";  
 const CustomImageEditor = () => {
     const [image, setImage] = useState(defaultSrc);
     const [cropData, setCropData] = useState("img/blank400x600.png");
@@ -37,13 +37,14 @@ const CustomImageEditor = () => {
         <br />
         <br />
         <Cropper
+          style={{height: "100%", width: "100%" }}
           aspectRatio={2 / 3}
           preview=".img-preview"
           src={image}
-          viewMode={3}
+          viewMode={1}
           minCropBoxHeight={10}
           minCropBoxWidth={10}
-          background={false}
+          background={true}
           responsive={true}
           autoCropArea={1}
           checkOrientation={false} // https://github.com/fengyuanchen/cropperjs/issues/671
