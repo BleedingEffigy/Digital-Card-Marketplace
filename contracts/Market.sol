@@ -97,7 +97,8 @@ contract NFTMarket is ReentrancyGuard {
     idToMarketItem[itemId].owner = payable(msg.sender);
     idToMarketItem[itemId].sold = true;
     _itemsSold.increment();
-    payable(owner).transfer(listingPrice);
+    (bool success, ) = owner.call{value:listingPrice}(""  );
+    require(success, "Transfering failed.");
   }
 
   /* Returns all unsold market items */
