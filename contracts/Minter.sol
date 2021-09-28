@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 import "hardhat/console.sol";
 
-contract NFTMarket is ReentrancyGuard {
+contract NiftyCardMinter is ReentrancyGuard {
   using Counters for Counters.Counter;
   Counters.Counter private _itemIds;
   Counters.Counter private _itemsSold;
@@ -25,7 +25,7 @@ contract NFTMarket is ReentrancyGuard {
     address nftContract;
     uint256 tokenId;
     address payable creator;
-    address payable owner
+    address payable owner;
   }
 
   mapping(uint256 => MarketItem) private idToMarketItem;
@@ -46,8 +46,7 @@ contract NFTMarket is ReentrancyGuard {
   /* Creates a new NiftyCard */
   function createMarketItem(
     address nftContract,
-    uint256 tokenId,
-    uint256 price
+    uint256 tokenId
   ) public payable nonReentrant {
 
     _itemIds.increment();

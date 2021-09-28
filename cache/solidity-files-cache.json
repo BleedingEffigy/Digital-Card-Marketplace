@@ -72,8 +72,8 @@
       ]
     },
     "/home/ahern077/phantomhaze/Workspace/NFTs/image-editor/contracts/NFT.sol": {
-      "lastModificationDate": 1632539751819,
-      "contentHash": "35a47afd583422746977768235bd72d1",
+      "lastModificationDate": 1632831598440,
+      "contentHash": "254ba758c2b2864235610488b8a404b9",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -101,6 +101,7 @@
         "@openzeppelin/contracts/utils/Counters.sol",
         "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
         "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
         "hardhat/console.sol"
       ],
       "versionPragmas": [
@@ -501,8 +502,8 @@
       ]
     },
     "/home/ahern077/phantomhaze/Workspace/NFTs/image-editor/contracts/Market.sol": {
-      "lastModificationDate": 1632539767332,
-      "contentHash": "d0718e22aaea042c61ab0446005571b5",
+      "lastModificationDate": 1632857302580,
+      "contentHash": "93487841d1b3edc2bdbef8883bf7aa4b",
       "sourceName": "contracts/Market.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -571,6 +572,81 @@
       ],
       "artifacts": [
         "ReentrancyGuard"
+      ]
+    },
+    "/home/ahern077/phantomhaze/Workspace/NFTs/image-editor/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1632539473112,
+      "contentHash": "4fe56b59ced59d87df6b796758f62895",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/ahern077/phantomhaze/Workspace/NFTs/image-editor/contracts/Minter.sol": {
+      "lastModificationDate": 1632858707395,
+      "contentHash": "6f3f7011030b1b976265545f3ab537e7",
+      "sourceName": "contracts/Minter.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Counters.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.3"
+      ],
+      "artifacts": [
+        "NiftyCardMinter"
       ]
     }
   }
